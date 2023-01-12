@@ -68,6 +68,24 @@
       "parentUuid": "ba8d5ed7_87b4b099",
       "revId": "4d2219fc5799269f4d4dabea6a5f47a8107b62e1",
       "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "8c751d47_1b2f4b19",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000062
+      },
+      "writtenOn": "2023-01-12T21:06:02Z",
+      "side": 1,
+      "message": "Yeah, understood and I agree. The last thing we need is to not be able to get any bug reports at all. So we may as well consider the possibility that setting the max to 256K wasn\u0027t an overreaction on their part (even though it definitely looks like it)",
+      "parentUuid": "22657a16_39d8ef7e",
+      "revId": "4d2219fc5799269f4d4dabea6a5f47a8107b62e1",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
     }
   ]
 }
