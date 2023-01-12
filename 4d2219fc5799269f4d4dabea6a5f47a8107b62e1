@@ -50,6 +50,24 @@
       "message": "Maybe I can just dogfood this for a while.\n\nGoogle did this as a result of some issues they were seeing internally. We don\u0027t have their data because they don\u0027t share it. We don\u0027t know the full circumstances because the bug is private. So I don\u0027t have a lot of faith that their decision to do this benefits anyone but them (no faith, actually), but it would still be wise for me to see how it goes on my own devices for a while first.",
       "revId": "4d2219fc5799269f4d4dabea6a5f47a8107b62e1",
       "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "22657a16_39d8ef7e",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2023-01-12T21:03:15Z",
+      "side": 1,
+      "message": "I\u0027d like to err on the side of caution though, especially given we\u0027re trying to debug a nasty bug, but the fact that it only affects some people right now.\n\nChanges like these affect every single user.",
+      "parentUuid": "ba8d5ed7_87b4b099",
+      "revId": "4d2219fc5799269f4d4dabea6a5f47a8107b62e1",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
     }
   ]
 }
