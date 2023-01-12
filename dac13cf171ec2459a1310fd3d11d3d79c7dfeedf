@@ -36,6 +36,23 @@
       "serverId": "35266860-6252-469c-a67d-185064479fc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "cf8baa28_56c638d8",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000062
+      },
+      "writtenOn": "2023-01-12T21:08:02Z",
+      "side": 1,
+      "message": "The max you can set via adb is a whopping 256M per log, and they specifically reference dogfooders in their comments, so that\u0027s why I\u0027m skeptical 512K or 1M would be a problem, but you\u0027re totally right we should test these changes thoroughly before deploying.",
+      "revId": "dac13cf171ec2459a1310fd3d11d3d79c7dfeedf",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "c8afc84f_4f85f58f",
