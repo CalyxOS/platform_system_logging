@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "c8afc84f_4f85f58f",
+        "filename": "logd/LogSize.h",
+        "patchSetId": 3
+      },
+      "lineNbr": 23,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2023-01-12T20:57:28Z",
+      "side": 1,
+      "message": "Or maybe quadruple to 1024, but I wanted to start conservative, just in case.\n\nDon\u0027t want to have it be where trying to debug some people\u0027s issues lead to more issues for everyone.",
+      "revId": "dac13cf171ec2459a1310fd3d11d3d79c7dfeedf",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    }
+  ]
+}
