@@ -61,19 +61,17 @@ size_t GetBufferSizeFromProperties(log_id_t log_id) {
      */
     const auto hwType = android::base::GetProperty("ro.hardware.type", "");
     const auto isDebuggable = android::base::GetBoolProperty("ro.debuggable", false);
-    if (hwType == "automotive" && isDebuggable) {
-        std::string buffer_name = android_log_id_to_name(log_id);
-        std::array<std::string, 4> properties = {
-                "persist.logd.size." + buffer_name,
-                "ro.logd.size." + buffer_name,
-                "persist.logd.size",
-                "ro.logd.size",
-        };
+    std::string buffer_name = android_log_id_to_name(log_id);
+    std::array<std::string, 4> properties = {
+            "persist.logd.size." + buffer_name,
+            "ro.logd.size." + buffer_name,
+            "persist.logd.size",
+            "ro.logd.size",
+    };
 
-        for (const auto& property : properties) {
-            if (auto size = GetBufferSizeProperty(property)) {
-                return *size;
-            }
+    for (const auto& property : properties) {
+        if (auto size = GetBufferSizeProperty(property)) {
+            return *size;
         }
     }
 
