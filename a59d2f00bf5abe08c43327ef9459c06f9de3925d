@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "5091f7eb_559e209c",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000062
+      },
+      "writtenOn": "2023-01-12T18:22:07Z",
+      "side": 1,
+      "message": "I think we can do this through ro.logd.size instead, in which case we should.",
+      "revId": "a59d2f00bf5abe08c43327ef9459c06f9de3925d",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    }
+  ]
+}
