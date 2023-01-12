@@ -16,6 +16,23 @@
       "message": "Do we? Wouldn\u0027t the original concerns still stand?",
       "revId": "4d2219fc5799269f4d4dabea6a5f47a8107b62e1",
       "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "dc729835_ac5d60fe",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2023-01-12T20:56:49Z",
+      "side": 1,
+      "message": "What if we started conservative, at 15073: Double default log size, to 512K | https://review.calyxos.org/c/CalyxOS/platform_system_logging/+/15073",
+      "revId": "4d2219fc5799269f4d4dabea6a5f47a8107b62e1",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
     }
   ]
 }
