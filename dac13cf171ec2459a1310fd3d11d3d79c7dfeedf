@@ -71,6 +71,24 @@
       "serverId": "35266860-6252-469c-a67d-185064479fc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "beb44a93_8f3c00e9",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2023-01-13T12:21:55Z",
+      "side": 1,
+      "message": "Haha don\u0027t worry about it. 256 would definitely cause issues, and yeah without knowing we can only speculate, and just try to err on the safer side.\n\nYou should probably be able to set the persist prop directly. In theory our users could\u0027ve done it too - or well, just set it via dev options to 8M.",
+      "parentUuid": "e5e7da7c_f3d8f364",
+      "revId": "dac13cf171ec2459a1310fd3d11d3d79c7dfeedf",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "c8afc84f_4f85f58f",
