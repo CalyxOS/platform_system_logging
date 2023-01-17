@@ -62,44 +62,19 @@ static std::optional<size_t> GetBufferSizePropertyOverride(log_id_t log_id) {
     return {};
 }
 
-/* This method should only be used for debuggable devices. */
-static bool isAllowedToOverrideBufferSize() {
-    const auto hwType = android::base::GetProperty("ro.hardware.type", "");
-    /* We allow automotive devices to optionally override the default. */
-    return (hwType == "automotive");
-}
-
 size_t GetBufferSizeFromProperties(log_id_t log_id) {
+    if (auto size = GetBufferSizePropertyOverride(log_id)) {
+        return *size;
+    }
+
     /*
-     * http://b/196856709
-     *
-     * We've been seeing timeouts from logcat in bugreports for years, but the
-     * rate has gone way up lately. The suspicion is that this is because we
-     * have a lot of dogfooders who still have custom (large) log sizes but
-     * the new compressed logging is cramming way more in. The bugreports I've seen
-     * have had 1,000,000+ lines, so taking 10s to collect that much logging seems
-     * plausible. Of course, it's also possible that logcat is timing out because
-     * the log is being *spammed* as it's being read. But temporarily disabling
-     * custom log sizes like this should help us confirm (or deny) whether the
-     * problem really is this simple.
+     * For non-debuggable low_ram devices, we want to save memory here and use
+     * the minimum size.
      */
-    static const bool isDebuggable = android::base::GetBoolProperty("ro.debuggable", false);
-    if (isDebuggable) {
-        static const bool mayOverride = isAllowedToOverrideBufferSize();
-        if (mayOverride) {
-            if (auto size = GetBufferSizePropertyOverride(log_id)) {
-                return *size;
-            }
-        }
-    } else {
-        static const bool isLowRam = android::base::GetBoolProperty("ro.config.low_ram", false);
-        /*
-         * For non-debuggable low_ram devices, we want to save memory here and
-         * use the minimum size.
-         */
-        if (isLowRam) {
-            return kLogBufferMinSize;
-        }
+    const auto isDebuggable = android::base::GetBoolProperty("ro.debuggable", false);
+    const auto isLowRam = android::base::GetBoolProperty("ro.config.low_ram", false);
+    if (isLowRam && !isDebuggable) {
+        return kLogBufferMinSize;
     }
 
     return kDefaultLogBufferSize;
