@@ -122,6 +122,23 @@
       "parentUuid": "8c751d47_1b2f4b19",
       "revId": "4d2219fc5799269f4d4dabea6a5f47a8107b62e1",
       "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "753c0334_3d494516",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000062
+      },
+      "writtenOn": "2023-05-15T18:29:01Z",
+      "side": 1,
+      "message": "Remember that this only affects users who have increased the log buffer size in developer options, which would have been done on purpose.\n\nAccording to the comments, the worst that can happen is that logcat might timeout during a bug report, and then the bug report may not be complete -- fine, so if that causes problems, then it can simply be decreased again.\n\nMerging this shouldn\u0027t automatically make anyone\u0027s buffer size larger, unless they manually set it to be larger, so it won\u0027t fix anything on its own either, but it will allow us (and users) to increase the size for our/their own debugging purposes.",
+      "revId": "4d2219fc5799269f4d4dabea6a5f47a8107b62e1",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
     }
   ]
 }
