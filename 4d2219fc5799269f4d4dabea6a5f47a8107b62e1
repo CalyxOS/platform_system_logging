@@ -157,6 +157,23 @@
       "parentUuid": "753c0334_3d494516",
       "revId": "4d2219fc5799269f4d4dabea6a5f47a8107b62e1",
       "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "8a08d808_6cf0fde6",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000062
+      },
+      "writtenOn": "2023-08-29T21:07:04Z",
+      "side": 1,
+      "message": "If we are still worried about this affecting users who have adjusted the log buffer size (which again, is a user action that has to be done in dev options), one thing we could try is to apply this change to a build for the poorest-performing device we have available, increase the log buffer size all the way in developer options, leave it running for a bit to accumulate log entries, then try to take a bug report. We could even stress the device out somehow (run a benchmark?) during the bug report. Just an idea.\n\n(But I\u0027m highly in favor of YOLO for this, and I\u0027ve never seen a problem...)",
+      "revId": "4d2219fc5799269f4d4dabea6a5f47a8107b62e1",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
     }
   ]
 }
