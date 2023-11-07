@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "9d130d9c_50e02be9",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000062
+      },
+      "writtenOn": "2023-11-07T18:57:36Z",
+      "side": 1,
+      "message": "Re-sync\u0027d with (unmerged) AOSP change.",
+      "revId": "769cb807f57717679b7d7ec9ae4c4086fa9f000d",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    }
+  ]
+}
