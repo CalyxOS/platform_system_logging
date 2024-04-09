@@ -51,6 +51,23 @@
       "parentUuid": "409a7a3b_5ca77092",
       "revId": "769cb807f57717679b7d7ec9ae4c4086fa9f000d",
       "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "efa2db10_0bae5a79",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000062
+      },
+      "writtenOn": "2024-04-09T18:54:20Z",
+      "side": 1,
+      "message": "We continue to be unable to do anything about issues like this where the log buffer is overflowed, leaving us without a context for crashes that cause soft reboots, etc.: https://gitlab.com/CalyxOS/calyxos/-/issues/2210\n\nIf we double the default log size, we affect all users. If we merge this, we only affect users who choose to make changes to the log buffer size - again, a developer option.\n\nLet\u0027s please do either or both, but regardless, let\u0027s do something. This has been causing many bug reports to be a waste of our time for more than a year.",
+      "revId": "769cb807f57717679b7d7ec9ae4c4086fa9f000d",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
     }
   ],
   "submitRequirementResults": [
