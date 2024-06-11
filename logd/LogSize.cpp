@@ -46,6 +46,7 @@ static std::optional<size_t> GetBufferSizeProperty(const std::string& key) {
 }
 
 size_t GetBufferSizeFromProperties(log_id_t log_id) {
+    const auto isDebuggable = android::base::GetBoolProperty("ro.debuggable", false);
     std::string buffer_name = android_log_id_to_name(log_id);
     std::array<std::string, 4> properties = {
             "persist.logd.size." + buffer_name,
